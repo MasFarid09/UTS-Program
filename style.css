@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+}
+.section-heading {
+  color: rgb(255, 217, 0);
+} 
+.wrap {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.wrap .pondok p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 500;
+    text-shadow: 0 0 5px gold, 0 0 15px black, 0 0 20px gold, 0 0 40px black, 0 0 60px gold, 0 0 90px black;
+}
+.wrap .dh {
+    width: 100%;
+    margin-top: -30px;
+}
+.wrap .dh p{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 700;
+    text-shadow: 0 0 5px gold, 0 0 15px black, 0 0 20px gold, 0 0 40px black, 0 0 60px gold, 0 0 90px black;
+}
+
+/*navbar*/
+.navbar {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+
+    box-shadow: 0 2px 3px 0 rgba(0,0,0.1);
+    background: linear-gradient(500deg, green, gold);
+}
+.nav-item {
+    margin-right: 10px;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 0 5px gold, 0 0 15px black, 0 0 20px gold, 0 0 40px black, 0 0 60px gold, 0 0 90px black;
+    color: white !important;
+}
+.nav-link:hover {
+    color: gold !important;
+}
+/*searchbox*/
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-container input[type=text] {
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  width: 200px;
+  margin-right: 0px;
+}
+
+.search-container button[type=submit] {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.search-container button[type=submit]:hover {
+  color: #555;
+}
+
+.fa-search {
+  font-size: 20px;
+  color: green;
+  margin-right: 10px;
+}
+/*carousel*/
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner .carousel-item {
+  width:100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} 
+.carousel-inner .carousel-caption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+
+  top: 37%;
+  left: 0;
+  right: 0;
+}
+.carousel-inner .carousel-caption span {
+  color: gold;
+}
+.carousel-inner .carousel-caption h2{
+  color: white !important;
+  text-shadow: 0 0 5px gold, 0 0 15px black, 0 0 20px gold, 0 0 40px black, 0 0 60px gold, 0 0 90px black;
+
+  font-size: 42px;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto 10px auto;
+}
+.carousel-inner .carousel-caption p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0px auto 20px auto;
+}
+
+@media(max-width: 768px)
+{
+  .carousel-inner .carousel-caption h2{
+    font-size: 38px;
+  }
+}
+@media(max-width: 577px)
+{
+  .carousel-inner .carousel-caption h2{
+    font-size: 25px;
+  }
+  .carousel-inner .carousel-caption p{
+    font-size: 13px;
+  } 
+}
+ /*footer*/
+ footer {
+  background: linear-gradient(500deg, #008000, #ffd700);
+ }
+
+ /*card leaders*/
+ #leaders .card{
+  border-radius: o;
+  box-shadow: 5px 5px 15px #ffd700;
+  transition: all 0.3s ease-in;
+  -webkit-transition:  all 0.3s ease-in;
+  -moz-transition:  all 0.3s ease-in;
+ }
+#leaders .card:hover {
+  background: linear-gradient(500deg, #008000, #ffd700);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-sizing: 5px 5px 10px #9e9e9e;
+}
+#leaders .card:hover h3, #leaders .card:hover h5 {
+  color: white;
+}
+
+
+
+
